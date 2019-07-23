@@ -3,3 +3,4 @@
 app/__pycache__
 user/__pycache__
 .idea/vcs.xml
+db.sqlite3
