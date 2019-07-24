@@ -1,6 +1,6 @@
 .vscode/
 *.pyc
-app/__pycache__
-user/__pycache__
+api/__pycache__
+
 .*idea
 db.sqlite3
