@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4a44b3b-2b02-40f2-b3aa-82c2ff536311" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favorite_things/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/favorite_things/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="b4a44b3b-2b02-40f2-b3aa-82c2ff536311" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -144,7 +149,6 @@
         <option value="$PROJECT_DIR$/app/urls.py" />
         <option value="$PROJECT_DIR$/user/urls.py" />
         <option value="$PROJECT_DIR$/user/serializer.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/user/models.py" />
         <option value="$PROJECT_DIR$/app/tests.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
@@ -160,6 +164,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c6f9664b-f0a0-4093-b590-fce75f695520/console.sql" />
         <option value="$PROJECT_DIR$/favorite_things/settings.py" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -284,7 +289,7 @@
       <workItem from="1563917064780" duration="1873000" />
       <workItem from="1563946768980" duration="4200000" />
       <workItem from="1563974995303" duration="9381000" />
-      <workItem from="1563999586385" duration="5195000" />
+      <workItem from="1563999586385" duration="5524000" />
     </task>
     <servers />
   </component>
@@ -294,7 +299,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31984000" />
+    <option name="totallyTimeSpent" value="32313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1311" height="743" extended-state="6" />
@@ -400,13 +405,6 @@
     <entry file="file://$PROJECT_DIR$/user/urls.py" />
     <entry file="file://$PROJECT_DIR$/user/serializer.py" />
     <entry file="file://$PROJECT_DIR$/user/models.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/favorite_things/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -602,6 +600,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
