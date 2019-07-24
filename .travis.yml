@@ -10,3 +10,11 @@ script:
   - python3 manage.py migrate
 addons:
   postgresql: "9.6"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ab9d069af6b4ce5205b405d6b01992fdceda9d94  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
