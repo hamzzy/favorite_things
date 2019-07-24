@@ -1,6 +1,6 @@
 from rest_framework.test import APIClient, APITestCase
 from api.models import Favorite
-from user.models import CustomUser
+
 
 
 class MainViewTest(APITestCase, APIClient):
@@ -38,6 +38,8 @@ class MainViewTest(APITestCase, APIClient):
             self.create_favorite(title=fav['title'], ranking=fav['ranking'], category=fav['category'])
 
     def tearDown(self):
+        pass
         # fav = Favorite.objects.filter(user=user.id)
         # for f in fav:
         #     f.delete()
+
