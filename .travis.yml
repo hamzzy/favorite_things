@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+install:
+  # install dependencies
+  - pip3 install -r requirements.txt
+
+script:
+  #run migrations
+  - python3 manage.py migrate
+addons:
+  postgresql: "9.6"

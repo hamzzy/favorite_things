@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'api',
     'simple_history'
 
-
 ]
 
 MIDDLEWARE = [
@@ -50,8 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-     'simple_history.middleware.HistoryRequestMiddleware',
-
+    'simple_history.middleware.HistoryRequestMiddleware',
 
 ]
 
@@ -88,7 +86,7 @@ WSGI_APPLICATION = 'favorite_things.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'favorite_things',
+        'NAME': 'favorite_things',
         'USER': 'postgres',
         'PASSWORD': 'hamzat',
         'HOST': '127.0.0.1',
