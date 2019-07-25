@@ -13,8 +13,8 @@ class Category(models.Model):
         ('pl', 'place'),
         ('fod', 'food')
     ]
-    name = models.CharField(max_length=225, unique=True, blank=False, null=True,
-                            default='')
+    name = models.CharField(max_length=225, unique=True, blank=False, null=False,
+)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
     audit_log = HistoricalRecords()

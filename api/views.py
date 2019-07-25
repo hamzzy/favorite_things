@@ -20,7 +20,7 @@ class CategoryListView(ListCreateAPIView):
         if serializer.is_valid():
             serializer.save()
             return Response({'msg': 'category created'}, status=status.HTTP_201_CREATED)
-        return Response(request.data, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class FavouriteView(RetrieveUpdateDestroyAPIView):
