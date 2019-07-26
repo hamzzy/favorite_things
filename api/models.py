@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 from django.core.validators import MinLengthValidator
 from simple_history.models import HistoricalRecords
-from datetime import timezone
+
 # Create your models here.
 
 
@@ -24,10 +24,11 @@ class Category(models.Model):
 
 
 class Favorite(models.Model):
+
     title = models.CharField(max_length=225, null=False, blank=False,default='')
     description = models.CharField(max_length=300, null=False,default='' , validators=[MinLengthValidator(10, 'description should '
-                                                                                                  'not be less than '
-                                                                                                  '10')])
+                                                                                                          'not be less than '
+                                                                                                           '10')])
     ranking = models.IntegerField(null=False,default='', blank=False)
     metadata = JSONField(null=True,
                          blank=True,
