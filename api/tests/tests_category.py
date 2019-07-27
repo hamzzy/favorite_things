@@ -1,6 +1,6 @@
 from rest_framework.test import APIClient, APITestCase
 from api.models import Category
-from api.serializer import CategorySerializer
+
 
 
 class MainViewTest(APITestCase, APIClient):
