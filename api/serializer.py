@@ -2,7 +2,6 @@ from api.models import Favorite
 from api.models import Category
 from rest_framework import serializers
 from rest_framework.relations import PrimaryKeyRelatedField
-from django.db.models import F
 
 
 class CategorySerializer(serializers.ModelSerializer):

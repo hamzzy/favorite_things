@@ -54,17 +54,17 @@ class FavouriteView(RetrieveUpdateDestroyAPIView):
     serializer_class = FavoriteSerializer
     queryset = Favorite.objects.all()
 
-    def destroy(self, request, *args, **kwargs):
-        instance = self.get_serializer(request.data)
-        print(instance)
-        # fav = Favorite.objects.filter(
-        #     category=instance.data['ranking'],
-        #     ranking__gt=instance.data['ranking']
-        # ).update(ranking=F('ranking') - 1)
-        # if fav:
-        #     self.perform_destroy(instance)
-        return Response(status=status.HTTP_204_NO_CONTENT)
-        # return Response(instance.errors, status=status.HTTP_400_BAD_REQUEST)
+    def destroy(self, request, *args,**kwargs):
+        instance = self.get_object()
+
+        fav = Favorite.objects.filter(
+            category=instance.category,
+            ranking__gt=instance.ranking,
+        ).update(ranking=F('ranking') - 1)
+        if fav:
+            self.perform_destroy(instance)
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response(instance.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def perform_update(self, serializer):
         """
