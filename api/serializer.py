@@ -2,6 +2,7 @@ from api.models import Favorite
 from api.models import Category
 from rest_framework import serializers
 from rest_framework.relations import PrimaryKeyRelatedField
+from django.db.models import F
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -26,3 +27,16 @@ class FavoriteSerializer(serializers.ModelSerializer):
             validated_data['ranking'] = category + 1
 
             return super(FavoriteSerializer, self).create(validated_data)
+
+    def update(self, instance, validated_data):
+        category = Favorite.objects.filter(
+            id=instance.pk,
+            category=validated_data['category']
+        ).get()
+        if category.ranking >= validated_data['ranking'] or category.ranking <= validated_data['ranking']:
+            validated_data['ranking'] = category.ranking
+
+            return super(FavoriteSerializer, self).update(instance, validated_data)
+
+
+
